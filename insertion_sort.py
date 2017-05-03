@@ -23,6 +23,8 @@ def insort(alist):
 		for y in range(x, 0, -1):
 			if(alist[y] < alist[y-1]):
 				swap(alist, y, y-1)
+			else:
+				break
 	return alist
 array = insort(array)
 print(array)
