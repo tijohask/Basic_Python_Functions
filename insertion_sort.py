@@ -13,18 +13,18 @@ for i in range(num):
 
 print(array)
 
-def swap(inarray, i, j):
-	temp = inarray[i]
-	inarray[i] = inarray[j]
-	inarray[j] = temp
+def swap(in_array, i, j):
+	temp = in_array[i]
+	in_array[i] = in_array[j]
+	in_array[j] = temp
 
-def insort(alist):
-	for x in range(2, len(alist)):
+def in_sort(array_list):
+	for x in range(2, len(array_list)):
 		for y in range(x, 0, -1):
-			if(alist[y] < alist[y-1]):
-				swap(alist, y, y-1)
+			if(array_list[y] < array_list[y-1]):
+				swap(array_list, y, y-1)
 			else:
 				break
-	return alist
-array = insort(array)
+	return array_list
+array = in_sort(array)
 print(array)
